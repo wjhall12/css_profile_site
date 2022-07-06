@@ -1,0 +1,167 @@
+body {
+  /* 14. change the body text color to #40514e; */
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* <!-- 17. Add a class to the intro text then give it a style to make the text not be so wide and that it wraps around to multiple lines. Then add .intro in css and set the width to 30% and the margin to auto so that it is centered. Then change the line-height of all paragraphs to 2 --> */
+
+p {
+  line-height: 2;
+}
+
+/* 20. style the hr and change it to dotted. */
+hr {
+  border: dotted #93B5C6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+h1 {
+/* 6. change the font size of the h1 to 6rem so that it stands out. 1rem of a font size is 16px. Using rem helps people who may be visually impared because they will increase in size if you set your browser view to show a larger font size where as px will not increase the size. Today rem is preferred over px .*/
+  font-size: 6rem;
+  /* 8. change margin from margin-top from 0 to margin: 50px auto 0 auto*/
+  /* margin-top: 0; */
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  /* 9. Set the text colour for the h1 and h2 to both be the colour with hex code: #66BFBF and h3 to #11999e*/
+  color: #66bfbf;
+  /* 11.Change the line height of the h1 to double what it currently is: 2 to show how it works but then take it out because it looks better without it. */
+  /* line-height: 2; */
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  /* 9. Set the text colour for the h1 and h2 to both be the colour with hex code: #66BFBF and h3 to #11999e*/
+   color: #66bfbf;
+   /* 10. Change all the h2 tags to have font weight: normal */
+   font-weight: normal;
+  /* 15. add padding to the bottom of your h2 */
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  /* 9. Set the text colour for the h1 and h2 to both be the colour with hex code: #66BFBF and h3 to #11999e*/
+  color: #11999e;
+}
+
+/* <!-- 1. add your profile image to the middle container. Give your own personal image a class and style it so that the size is proportion to the site. Go to https://profilepicturemaker.com/ to make your image a circle.  */
+
+.image-profile {
+  width: 15%;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  padding-top: 100px;
+  position: relative;
+}
+
+.middle-container {
+  /* 5. Remove all the style in middle and bottom container */
+  /* 16. Add padding to the middle container so that the image is not so close to the top container image */
+  margin: 100px 0;
+}
+
+.bottom-container {
+  /* Remove all the style in middle and bottom container */
+  /* 23 add a background color and padding of the footer.   background-color: #66bfbf;  padding: 50px 0 20px;*/
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+}
+
+/* 24 change the a which would be the links in your footer to a {   color: #11999e;   font-family: 'Montserrat', sans-serif;   margin: 10px 20px;   text-decoration: none;   } and add a a:hover {
+  color: #eaf6f6; }*/
+
+a {
+  color: #11999e;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+  }
+
+a:hover {
+  color: #eaf6f6;
+}
+
+/* 11. add a .skill-row style and change the width to 50%. Set the margin to 100px auto;. Set the text-align: left;. Set the line-height: 2; */
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+/* <!-- 21 change the width of the contact me message so that it is not so wide. So set the css of .contact-me to width 40% and the margin: 40px auto 60px;  --> */
+
+.contact-me {
+  width: 30%;
+  margin: 40px auto 60px;
+}
+/* 19. adjust the top cloud from 50px to 40 px on the top and bottom cloud from 300px to 250 px at the bottom */
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 250px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+/* 2. add an image to go for your skills. You can go to flaticons or giphy.com to find images or gifs. You can either download the image and save it inside your images folder or right click and copy the image address. /* make sure the images you chose for your skills are proportion to the Site. If you need to resize them be sure that you give the image a class name then style them in css */
+
+.movie-img {
+/*12. make the skill images to float which will allow text to go on the side of the image as opposed to below the image. Hit save and refresh and you will see the text right next to the image. Add 30 px of margin right to the image so that you have a little bit of space between the image and the text. Hit save and refresh and see the image now has some space between it and the text. If you can, try to avoid using float because you can run into a lot of css problems. Only use it for cases of wrapping text around text*/
+float: left;
+margin-right: 30px;
+}
+
+.bbq-img {
+  /*13. make the skill images to float which will allow text to go on the side of the image as opposed to below the image. Hit save and refresh and you will see the text right next to the image. Add 30 px of margin right to the image so that you have a little bit of space between the image and the text. Hit save and refresh and see the image now has some space between it and the text. If you can, try to avoid using float because you can run into a lot of css problems. Only use it for cases of wrapping text around text */
+float: right;
+margin-left: 30px;
+}
+
+ /* 22 add a button to your contact me page. <a href="mailto:name@email.com" class="btn">CONTACT ME</a>. Then style it in css as .btn .btn {  background-color: lightblue;    color: #40514e;  display: block;  width: 20%;
+    padding: 16px 8px; text-align: center;  margin: auto; text-decoration: none; border-radius: 8px;   font-family: 'Montserrat', sans-serif; } also add a hover to the .btn:hover { color: #eaf6f6;  ackground-color: #F0D9FF;  } */
+.btn {
+    background-color: lightblue;
+    color: #40514e;
+    display: block;
+    width: 20%;
+    padding: 16px 8px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.btn:hover {
+  color: #eaf6f6;
+  background-color: #F0D9FF;
+}
+
+/* 25. Add a class to the copyright and name it copyright then style it .copyright {   color: #eaf6f6;
+  font-size: 0.75rem;   padding: 20px 0; } */
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
